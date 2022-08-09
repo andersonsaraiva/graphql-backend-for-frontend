@@ -4,11 +4,13 @@ const {
   GraphQLSchema,
   GraphQLList,
 } = require("graphql");
+
 const {
   getAllUsers,
   getUserById,
   getUserByUsername,
 } = require("../resolvers/user-resolver");
+
 const UserType = require("../types/user");
 
 // declare the queries with the resolvers
@@ -29,7 +31,7 @@ const RootQueries = new GraphQLObjectType({
           type: GraphQLString,
         },
       },
-      resolve: (_Îsource, args) => {
+      resolve: (_source, args) => {
         const { userId } = args;
         return getUserById(userId);
       },
