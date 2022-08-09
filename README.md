@@ -2,7 +2,7 @@
 
 - This repository contains a sample GraphQL API that implements the BFF Pattern. 
 
-# Resources
+## Resources
 
 - The `/data` directory consists of the mock database with a list of users.
 - The `/resolvers` directory consists of the service layer (business logic) functions that execute query functions for the required conditions.
